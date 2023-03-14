@@ -21,8 +21,12 @@ function dynamicHeaderCreator(size, text) {
 
   newHeader.appendChild(headerText);
 
-  const grabDiv = document.querySelector(".content-wrapper");
-  console.log(newHeader);
+  return newHeader;
 }
 
-dynamicHeaderCreator(headerSize, headerText);
+function headerRenderer(header) {
+  const grabDiv = document.querySelector(".content-wrapper");
+  grabDiv.appendChild(header);
+}
+
+headerRenderer(dynamicHeaderCreator(headerSize, headerText));
