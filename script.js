@@ -24,7 +24,7 @@ function dynamicHeaderCreator(size, text) {
   return newHeader;
 }
 
-function headerRenderer(header) {
+function headerRender(header) {
   const grabDiv = document.querySelector(".content-wrapper");
   grabDiv.appendChild(header);
 }
